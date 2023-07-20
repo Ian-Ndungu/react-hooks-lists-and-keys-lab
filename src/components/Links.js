@@ -1,13 +1,20 @@
-import React from "react";
+import React from 'react';
 
-function Links({ github, linkedin }) {
+const Home = () => {
+  return <div>Home</div>;
+};
+
+const Links = () => {
+  return <div>Links</div>;
+};
+
+const About = ({ children }) => {
   return (
     <div>
-      <h3>Links</h3>
-      <a href={github}>{github}</a>
-      <a href={linkedin}>{linkedin}</a>
+      About
+      {children}
     </div>
   );
-}
+};
 
-export default Links;
+export { Home, About, Links };
